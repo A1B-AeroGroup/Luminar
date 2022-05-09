@@ -11,7 +11,7 @@ class object {
         object(double mass);
         
         std::vector<force> forces;
-
+        
     private:
         /* scalar attributes */
         double mass;
