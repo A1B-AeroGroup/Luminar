@@ -57,7 +57,12 @@ class egg : public object {
 };
 
 /* methods */
+void toggle_motor(void) {
+    static bool motorOn = false; // should persist
+    if (!motorOn) {
 
+    }
+}
 
 int main() {
     /* global sim forces */
@@ -68,7 +73,16 @@ int main() {
     rocket r(1.4);
     egg e(0.0496, 24.5);
 
-    scheduler sch;
+    scheduler sch("logfile.txt");
+    
+    /* set the events */
+    // sets the global gravity
+    
+
+    /* rus the scheduler */
+    sch.run();
+
+    /* performs all necessary destructions */
 
     return 0;
 }

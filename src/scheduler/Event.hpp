@@ -2,6 +2,15 @@
 #define EVENT_H
 
 class event {
+    public:
+        /* constructor */
+        event();
+        
+    private:
+
+
+
+    
     
 };
 
